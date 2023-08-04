@@ -4,8 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danny-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 <body>
+    <!-- Header Section Start -->
+    <div id="header">
+        <div class="container">
+            <nav id ="sticky" class="sticky">
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                   
+                    <li><a href="#about">About</a></li>
+                   
+                    <li><a href="#services">Services</a></li>
+                   
+                    <li><a href="#portfolio">Portfolio</a></li>
+                   
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+               
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span> Danny Gen</span> <br> Menardo from Ph</h1>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header Section Start -->
+
+    <!--Start  of About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut quia omnis et deserunt earum suscipit voluptatem voluptatum tenetur esse eveniet dignissimos, eum, quos quam harum dolores possimus fuga nobis!
+                    Enim laudantium minima sint rem. Itaque mollitia magnam alias esse necessitatibus amet vel obcaecati totam aliquid nulla non, vitae dolorem minus culpa modi! Pariatur cum eveniet, asperiores ut similique dolores.
+                    Odio non quo eos voluptate assumenda? Harum laboriosam saepe sint eius et? Tempora aliquam sint aut ad eligendi autem eius animi, earum iste iure praesentium amet odio ipsam ducimus perferendis.
+                    Alias saepe doloremque sequi aliquid.
+                    Nostrum inventore iure </p>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span> UI/UX</span><br>Designing Web App interface</li>
+                            <li> <span>Web Development</span><br> Web App Dvelopment</li>
+                            <li> <span>App Development</span> <br>Bulding Android /IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span> Multi Vendor Web app </span><br>Designing Web App interface</li>
+                            <li> <span>Multi Vendor Mobile App </span> <br> Web App Dvelopment</li>
+                            <li> <span>Personal Portfolio</span> <br>Bulding Android /IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span> Metro Dumagute </span><br>Designing Web App interface</li>
+                            <li> <span>Web Development</span> <br> Web App Dvelopment</li>
+                            <li> <span>App Development</span> <br>Bulding Android /IOS apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--End Start  of About Section -->
+
+     <!--End Start  of Services Section -->
+     <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My Services</h1>
+           <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Laborum, hic magni quod aliquam d
+                    Expedita distinctio dolores placeat nisi ullam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Laborum, hic magni quod aliquam d
+                    Expedita distinctio dolores placeat nisi ullam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Laborum, hic magni quod aliquam d
+                    Expedita distinctio dolores placeat nisi ullam.</p>
+                    <a href="#">learn more </a>
+                </div>
+           </div>
+        </div>
+     </div>
+<!-- -------------------------My Services end------------------------------------- -->
+
+
+<!-- -------------------------Portfolio Start------------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="mywork">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Repellendus molestias quisquam, 
+                        hic tempore tempora facere doloribus adipisci soluta. 
+                        Cupiditate nostrum vitae laudantium ex iusto ipsum magni, 
+                        eveniet eligendi eius numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="mywork">
+                <div class="layer">
+                    <h3>Multi Vendor Mobile App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Repellendus molestias quisquam, 
+                        hic tempore tempora facere doloribus adipisci soluta. 
+                        Cupiditate nostrum vitae laudantium ex iusto ipsum magni, 
+                        eveniet eligendi eius numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="mywork">
+                <div class="layer">
+                    <h3>Multi-Vendor Web App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Repellendus molestias quisquam, 
+                        hic tempore tempora facere doloribus adipisci soluta. 
+                        Cupiditate nostrum vitae laudantium ex iusto ipsum magni, 
+                        eveniet eligendi eius numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+           
+        </div>
+       <a class="btn" href="#">See More</a>
+    </div>
+</div>
+<!-- -------------------------Portfolio End------------------------------------- -->
+
+<!-- -------------------------Contact Start------------------------------------- -->
+
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+           <h1 class="sub-title">Contact Me</h1>
+           <p><i class="fa-regular fa-envelope"></i> menardo.dannygenn@gmail.com</p>
+           <p><i class="fa-solid fa-mobile-screen"></i> 09675215593</p>
+           <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+           </div>
+           <a href="images/my-cv.pdf" download="" class="btn btn2">Dowload CV</a>
+        </div>
+        <div class="contact-right">
+              <form action="">
+                <input type="text" name="name" placeholder="Please Enter Your Name" required>
+                <input type="email" name="email" placeholder="Please Enter Your Email" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn2">Submit <i class="fa-thin fa-paper-plane-top"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @ Danny. Made with a &nbsp;<span> (<i class="fa-solid fa-heart"></i>) </span></p>
+</div>
+</div>
+
+
+<!-- -------------------------Contact End------------------------------------- -->
     
+
+
+
+
+<!-- main.js -->
+     <script src="main.js"></script>
 </body>
 </html>
