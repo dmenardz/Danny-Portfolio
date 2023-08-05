@@ -32,3 +32,15 @@ var tablinks = document.getElementsByClassName('tab-links');
       header.classList.remove('scrolled'); // Add this line to remove the background color class
     }
   });
+
+  //Google Sheet Script
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxdxCbOun98K08yTT6hecF6qC0kr0PKWdjo8zzkdTcOE2xndOhCURH8Mk3lgYVMkNCtuQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
