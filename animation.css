@@ -1,0 +1,41 @@
+
+  .header-text p, .header-text h1 span {
+    opacity: 0; 
+  }
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100%); /* Slide up by 20 pixels */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide down to the original position */
+    }
+  }
+
+  /* Apply the animation to the header text */
+  .header-text p, .header-text h1 span {
+    animation: fadeIn 2s ease-in-out forwards; /* Run the animation once and maintain the final state */
+    /* Adjust the duration (1s) and easing (ease-in-out) as desired */
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateY(100%); /* Slide in from the left (completely outside the screen) */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide to the original position */
+    }
+  }
+  .header-text h1 span {
+    animation: fadeIn 2s ease-in-out forwards; /* Use the fadeIn animation as before */
+  }
+
+  .header-text h1 {
+    animation: slideInLeft 2s ease-in-out forwards; /* Run the slideInLeft animation once and maintain the final state */
+  }
+
+

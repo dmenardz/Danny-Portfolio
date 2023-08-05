@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
   // Show and hide the loader
 var $loaderOverlay = $('.loader-overlay');
 function showLoader() {
@@ -84,4 +85,8 @@ $('.submit-button').on('click', function() {
   simulateAjaxRequest();
 });
 
+
+
   });
+
+
