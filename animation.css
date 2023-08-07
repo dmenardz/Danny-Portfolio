@@ -37,5 +37,83 @@
   .header-text h1 {
     animation: slideInLeft 2s ease-in-out forwards; /* Run the slideInLeft animation once and maintain the final state */
   }
+  .fade-in {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInAndScale 2s ease forwards;
+  }
+  
+  @keyframes fadeInAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      
+    }
+  }
+  .slide-in {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: slideInAndScale 2s ease forwards;
+  }
+  
+  @keyframes slideInAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      
+    }
+  }
+/* Animation for scrolling down */
+.scroll-down-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease, transform 2s ease;
+}
 
+.scroll-down-animation.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for scrolling up */
+.scroll-up-animation {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.scroll-up-animation.fade-in {
+  opacity: 1;
+  transform: translatY(0);
+}
+.scroll-left-animation {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.scroll-left-animation.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animation for scrolling up */
+.scroll-right-animation {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.scroll-right-animation.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
 

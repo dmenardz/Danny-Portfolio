@@ -85,7 +85,34 @@ $('.submit-button').on('click', function() {
   simulateAjaxRequest();
 });
 
+  // Function to check if an element is in the viewport
+  function isElementInViewport(element) {
+    var elementOffset = $(element).offset().top;
+    var windowHeight = $(window).height();
+    var scrollPos = $(window).scrollTop();
 
+    return elementOffset - windowHeight + 100 < scrollPos && elementOffset > scrollPos - windowHeight;
+  }
+
+  // Function to handle animations
+  function handleAnimations() {
+    $(".scroll-down-animation, .scroll-up-animation,.scroll-right-animation, .scroll-left-animation").each(function () {
+      var element = this;
+      if (isElementInViewport(element)) {
+        $(element).addClass("fade-in");
+      } else {
+        $(element).removeClass("fade-in");
+      }
+    });
+  }
+
+  // Call the handleAnimations function on page load
+  handleAnimations();
+
+  // Call the handleAnimations function whenever the user scrolls
+  $(window).scroll(function () {
+    handleAnimations();
+  });
 
   });
 
